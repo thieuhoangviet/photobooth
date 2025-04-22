@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoBooth</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <h1>PhotoBooth</h1>
+    <div class="booth-container">
+      <video id="video" autoplay></video>
+      <canvas id="canvas"></canvas>
+    </div>
+    <button onclick="takePhoto()">📸 Chụp Ảnh</button>
+    <button onclick="downloadSelectedPhotos()">⬇️ Tải ảnh đã chọn</button>
+    <div class="counter">Ảnh đã chọn: <span id="selectedCount">0</span></div>
+    <br />
+    <a id="downloadLink" download="photo.png" style="display: none">Tải ảnh</a>
+
+    <div class="gallery" id="photoGallery"></div>
+
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/3159/3159066.png"
+      class="icon icon1"
+      alt="star"
+    />
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+      class="icon icon2"
+      alt="camera"
+    />
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/151/151773.png"
+      class="icon icon3"
+      alt="heart"
+    />
+    <img
+      src="https://cdn-icons-png.flaticon.com/512/727/727803.png"
+      class="icon icon4"
+      alt="smile"
+    />
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

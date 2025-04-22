@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f8ff;
+  padding: 20px;
+  position: relative;
+}
+h1 {
+  color: #333;
+}
+.booth-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+video,
+canvas {
+  width: 320px;
+  height: 240px;
+  border: 5px solid #333;
+  border-radius: 10px;
+  background-color: white;
+}
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #218838;
+}
+.photo-actions button {
+  background-color: #dc3545;
+}
+.photo-actions button:hover {
+  background-color: #c82333;
+}
+a {
+  display: inline-block;
+  margin: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 10px;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+.photo-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 5px;
+}
+.photo-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+.photo-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 5px;
+}
+.photo-actions input[type="checkbox"] {
+  transform: scale(1.3);
+}
+.icon {
+  position: absolute;
+  width: 40px;
+}
+.icon1 {
+  top: 10px;
+  left: 10px;
+}
+.icon2 {
+  top: 10px;
+  right: 10px;
+}
+.icon3 {
+  bottom: 10px;
+  left: 10px;
+}
+.icon4 {
+  bottom: 10px;
+  right: 10px;
+}
+.frame1 {
+  border: 5px solid red;
+}
+.frame2 {
+  border: 5px dashed green;
+}
+.frame3 {
+  border: 5px dotted blue;
+}
+.frame4 {
+  border: 5px double orange;
+}
+.frame5 {
+  border: 5px groove purple;
+}
+.counter {
+  margin: 10px;
+  font-size: 16px;
+  color: #333;
+}
